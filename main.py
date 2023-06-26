@@ -17,8 +17,10 @@ def area_cilindro(raio, altura):
 
 # Definindo a função para calcular a quantidade de latas
 def qtde_latas(area):
-    qtde = area / 15
-    return qtde
+   rendimento_litro = 3
+   litros_por_lata = 5
+   qtde = area / (rendimento_litro * litros_por_lata)
+   return qtde
 
 # Definindo a função para calcular o custo
 def custo_latas(qtde):
